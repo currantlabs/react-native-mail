@@ -100,6 +100,8 @@ RCT_EXPORT_METHOD(mail:(NSDictionary *)options
                 mimeType = @"application/vnd.ms-powerpoint";
             } else if ([type isEqualToString:@"html"]) {
                 mimeType = @"text/html";
+			} else if ([type isEqualToString:@"txt"]) {
+				mimeType = @"text/plain";
 			} else if ([type isEqualToString:@"csv"]) {
                 mimeType = @"text/csv";
             } else if ([type isEqualToString:@"pdf"]) {
